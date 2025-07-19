@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payments & Insurance | Mindful Healing</title>
+  <!--
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+-->
+<script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js" defer></script>
+</head>
+
+<body class="bg-[#F5F1EB] text-[#3E3E3E]">
+
+ <!-- Header-->
+ <div id="site-header"></div>
+
+
+  <!-- Page Content -->
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-[#6B705C] mb-6">Payments & Insurance</h1>
+
+    <p class="mb-6">At Mindful Healing, we understand that navigating mental health care and insurance can feel overwhelming. We are committed to making your experience as smooth and transparent as possible.</p>
+
+    <h2 class="text-2xl font-semibold mb-4 text-[#A98467]">We currently accept the following insurance providers:</h2>
+    <ul class="list-disc list-inside mb-6 space-y-1">
+      <li>Aetna</li>
+      <li>Cigna</li>
+      <li>Highmark</li>
+      <li>United Healthcare</li>
+      <li>UPMC</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mb-4 text-[#A98467]">Out-of-Network & Private Pay</h2>
+    <p class="mb-6">
+      If you have out-of-network benefits or prefer to pay privately, we are happy to provide you with a superbill for potential reimbursement. Please check with your insurance provider to determine your coverage.
+    </p>
+
+    <h2 class="text-2xl font-semibold mb-4 text-[#A98467]">Have Questions?</h2>
+    <p>
+      If you’re unsure about your benefits or would like to discuss payment options, feel free to <a href="#contact" class="text-[#6B705C] underline hover:text-[#556050]">contact us</a>. We're here to help you find clarity and peace of mind.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#6B705C] text-white text-center py-6">
+    <p>&copy; 2025 Mindful Healing. All rights reserved.</p>
+  </footer>
+  <!--  fetching the header-->
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("site-header").innerHTML = data;
+    });
+</script>
+</body>
+</html>
