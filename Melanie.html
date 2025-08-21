@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Melanie</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melanie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+  </head>
 
-</head>
+  <body class="bg-[#F5F1EB] text-[#3E3E3E]">
+    <!-- Header-->
+    <div id="site-header"></div>
 
-
-<body class="bg-[#F5F1EB] text-[#3E3E3E]">
-
- <!-- Header-->
- <div id="site-header"></div>
-
-  <!-- Profile Content -->
-  <section class="py-16">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <img src="images/MelanieHeadShotSmall.jpg" alt="Kristin" class="w-40 h-40 mx-auto rounded-full shadow mb-6" />
-      <h2 class="text-3xl font-bold mb-2">Melanie</h2>
-      <p class="text-blue-600 mb-4">LPC</p>
-      <p class="text-gray-700 text-lg leading-relaxed mb-6">
-        Blurb about Melanie
-    </p>
-
-      <h3 class="text-2xl font-semibold mb-2 mt-8">Therapy Focus</h3>
-      <ul class="text-left list-disc list-inside text-gray-600 space-y-2">
-        <li>Anxiety & Panic Disorders</li>
-        <li>Mindfulness-Based Stress Reduction (MBSR)</li>
-        <li>PTSD and Complex Trauma</li>
-        <li>Self-Compassion Practices</li>
-      </ul>
-
-      <div class="mt-10">
-        <a href="index.html#contact" class="inline-block bg-[#6B705C] text-white px-6 py-3 rounded hover:bg-[#556050]">
-            Book a Session
-          </a>
+    <!-- Profile Content -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-start">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+          <img
+            src="images/MelanieHeadShotSmall.jpg"
+            alt="Kristin"
+            class="rounded-full h-1/2 w-1/2 mx-auto mb-4 border-4 border-[#CB997E]"
+          />
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold mb-2">Kristin</h2>
+          <p class="text-blue-600 mb-4">LPC</p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            Blurb about Melanie
+          </p>
+          <div>
+            <h3 class="text-2xl font-semibold mb-2 mt-8">Therapy Focus</h3>
+            <ul class="text-left list-disc list-inside text-gray-600 space-y-2">
+              <li>Anxiety & Panic Disorders</li>
+              <li>Mindfulness-Based Stress Reduction (MBSR)</li>
+              <li>PTSD and Complex Trauma</li>
+              <li>Self-Compassion Practices</li>
+            </ul>
+            <div class="mt-10">
+              <a
+                href="index.html#contact"
+                class="inline-block bg-[#6B705C] text-white px-6 py-3 rounded hover:bg-[#556050]"
+              >
+                Book a Session
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-<!--  fetching the header-->
-<script>
-    fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("site-header").innerHTML = data;
-      });
-  </script>
-</body>
+    </section>
+    <!--  fetching the header-->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("site-header").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>
-
