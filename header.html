@@ -1,73 +1,102 @@
-
 <header class="bg-black shadow" x-data="{ mobileMenuOpen: false }">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-  
-      <!-- Logo -->
-    
-      <a href="index.html" >
-          <img src="images/3rootsLogo.png" alt= "3 Roots Counseling" class="md:flex w-1/2 h-max justify-self-start"/>
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo -->
+
+    <a href="index.html">
+      <img
+        src="images/3rootsLogo.png"
+        alt="3 Roots Counseling"
+        class="md:flex w-1/2 justify-self-start"
+      />
+    </a>
+
+    <!-- Middle: CTA Button (always adjacent to nav or hamburger) -->
+    <div class="flex-1 flex justify-end md:justify-end mr-4">
+      <a
+        href="#contact"
+        class="bg-[#6B705C] text-white px-4 py-2 rounded hover:bg-[#556050]"
+      >
+        Schedule Consultation
       </a>
-    
-      <!-- Middle: CTA Button (always adjacent to nav or hamburger) -->
-      <div class="flex-1 flex justify-end md:justify-end mr-4">
-        <a href="#contact" class="bg-[#6B705C] text-white px-4 py-2 rounded hover:bg-[#556050]">
-          Schedule Consultation
-        </a>
-      </div>
-  
-      <!-- Right: Nav links (desktop) OR hamburger (mobile) -->
-      <div class="flex items-center">
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex space-x-6 items-center">
-          <div class="relative group">
-            <button class="text-white hover:text-[#F5F1EB] inline-flex items-center gap-1">
-              Therapists
-              <span class="text-sm">▼</span>
-            </button>
-            <div class="absolute hidden group-hover:block bg-white text-[#3E3E3E] shadow-lg rounded-md py-2 mt-2 w-40 z-50">
-              <a href="Kristin.html" class="block px-4 py-2 hover:bg-[#F5F1EB]">Kristin</a>
-              <a href="Melanie.html" class="block px-4 py-2 hover:bg-[#F5F1EB]">Melanie</a>
-              <a href="Jen.html" class="block px-4 py-2 hover:bg-[#F5F1EB]">Jen</a>
-            </div>
+    </div>
+
+    <!-- Right: Nav links (desktop) OR hamburger (mobile) -->
+    <div class="flex items-center">
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 items-center">
+        <div class="relative group">
+          <button
+            class="text-white hover:text-[#F5F1EB] inline-flex items-center gap-1"
+          >
+            Therapists
+            <span class="text-sm">▼</span>
+          </button>
+          <div
+            class="absolute hidden group-hover:block bg-white text-[#3E3E3E] shadow-lg rounded-md py-2 mt-2 w-40 z-50"
+          >
+            <a href="Kristin.html" class="block px-4 py-2 hover:bg-[#F5F1EB]"
+              >Kristin</a
+            >
+            <a href="Melanie.html" class="block px-4 py-2 hover:bg-[#F5F1EB]"
+              >Melanie</a
+            >
+            <a href="Jen.html" class="block px-4 py-2 hover:bg-[#F5F1EB]"
+              >Jen</a
+            >
           </div>
-          <a href="index.html#about" class="text-white hover:text-[#F5F1EB]">About</a>
-          <a href="index.html#services" class="text-white hover:text-[#F5F1EB]">Services</a>
-          <a href="payments.html" class="block hover:text-[#F5F1EB]">Payments</a>
-          <a href="index.html#contact" class="text-white hover:text-[#F5F1EB]">Contact</a>
-        </nav>
-  
-        <!-- Hamburger for Mobile -->
-        <button class="md:hidden text-white" @click="mobileMenuOpen = !mobileMenuOpen">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
+        </div>
+        <a href="index.html#about" class="text-white hover:text-[#F5F1EB]"
+          >About</a
+        >
+        <a href="index.html#services" class="text-white hover:text-[#F5F1EB]"
+          >Services</a
+        >
+        <a href="payments.html" class="block hover:text-[#F5F1EB]">Payments</a>
+        <a href="index.html#contact" class="text-white hover:text-[#F5F1EB]"
+          >Contact</a
+        >
+      </nav>
+
+      <!-- Hamburger for Mobile -->
+      <button
+        class="md:hidden text-white"
+        @click="mobileMenuOpen = !mobileMenuOpen"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
-  
-    <!-- Mobile Dropdown -->
-    <div x-show="mobileMenuOpen" class="md:hidden px-4 pb-4 bg-[#A98467] space-y-2 text-white">
-      <a href="index.html#about" class="block hover:text-[#F5F1EB]">About</a>
-      <div class="border-t border-[#F5F1EB] pt-2">
-        <p class="font-semibold">Therapists</p>
-        <a href="Kristin.html" class="block pl-4 text-sm hover:text-[#F5F1EB]">Kristin</a>
-        <a href="Melanie.html" class="block pl-4 text-sm hover:text-[#F5F1EB]">Melanie</a>
-        <a href="Jen.html" class="block pl-4 text-sm hover:text-[#F5F1EB]">Jen</a>
-      </div>
-      <a href="index.html#services" class="block hover:text-[#F5F1EB]">Services</a>
-      <a href="payments.html" class="block hover:text-[#F5F1EB]">Payments</a>
-      <a href="index.html#contact" class="block hover:text-[#F5F1EB]">Contact</a>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div
+    x-show="mobileMenuOpen"
+    class="md:hidden px-4 pb-4 bg-[#A98467] space-y-2 text-white"
+  >
+    <a href="index.html#about" class="block hover:text-[#F5F1EB]">About</a>
+    <div class="border-t border-[#F5F1EB] pt-2">
+      <p class="font-semibold">Therapists</p>
+      <a href="Kristin.html" class="block pl-4 text-sm hover:text-[#F5F1EB]"
+        >Kristin</a
+      >
+      <a href="Melanie.html" class="block pl-4 text-sm hover:text-[#F5F1EB]"
+        >Melanie</a
+      >
+      <a href="Jen.html" class="block pl-4 text-sm hover:text-[#F5F1EB]">Jen</a>
     </div>
-  </header>
-
-  
-
-
-
-
-
-
-
-
-
+    <a href="index.html#services" class="block hover:text-[#F5F1EB]"
+      >Services</a
+    >
+    <a href="payments.html" class="block hover:text-[#F5F1EB]">Payments</a>
+    <a href="index.html#contact" class="block hover:text-[#F5F1EB]">Contact</a>
+  </div>
+</header>
