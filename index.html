@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9MR6GVGWSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9MR6GVGWSJ');
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3 Roots Counseling</title>
@@ -22,7 +31,7 @@
 
   <body class="bg-[#F5F1EB] text-[#3E3E3E]">
     <!-- Header-->
-    <div id="site-header"></div>
+    <div id="site-header" class="sticky top-0 z-50"></div>
 
     <!-- Hero Section -->
     <section class="bg-[#CB997E] py-20">
@@ -59,7 +68,7 @@
         <h3 class="text-3xl font-semibold text-center mb-10">
           Meet Our Therapists
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 z-40">
           <!-- Therapist 1 -->
           <a
             href="Kristin.html"
@@ -202,6 +211,18 @@
       subButton.addEventListener("click", () => {
         alert("email will be sent?");
       });
+      // Source - https://stackoverflow.com/a
+// Posted by M K
+// Retrieved 2025-11-08, License - CC BY-SA 3.0
+
+(function() {
+    if (document.location.hash) {
+        setTimeout(function() {
+            window.scrollTo(window.scrollX, window.scrollY - 1000);
+        }, 10);
+    }
+})();
+
     </script>
   </body>
 </html>
