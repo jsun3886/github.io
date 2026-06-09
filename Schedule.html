@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="images/favicon.png">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9MR6GVGWSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9MR6GVGWSJ');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule a Consult</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
+  </head>
+  <body class="bg-[#F5F1EB] text-[#3E3E3E]">
+    <!-- Header-->
+    <div id="site-header"></div>
+
+    <!-- Profile Content -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-start">
+        <div class="max-w-3xl mx-auto px-4 justify-self-left flex">
+          
+        
+            <div class="px-8 justify-self-center">  
+                <img
+              src="images/KristinHeadShotSmall.jpg"
+              alt="Kristin"
+              class="rounded-full mx-25 max-w-5x1 mb-4 border-4 border-[#CB997E]"
+            />
+                <div class="mt-10 justify-center flex">
+                    <a 
+                    href="https://therapyfinder.com/therapist/kristin-massie-sunday-delmont-pa"
+                    class="inline-block justify-center bg-[#6B705C] text-white px-6 py-3 rounded hover:bg-[#556050]"
+                     >
+                        Book with Kristin
+                    </a>
+                </div>
+            </div>  
+            <div class="px-8">
+                <img
+            src="images/JennHeadShotSmall.jpg"
+            alt="Jen"
+            class="rounded-full mx-auto mb-4 border-4 border-[#CB997E] justify-self-start"
+          />
+              <div class="mt-10 justify-center flex">
+                <a
+                 href="https://therapyfinder.com/therapist/jennifer-murphy-delmont-pa"
+                 class="inline-block bg-[#6B705C] text-white px-6 py-3 rounded hover:bg-[#556050]"
+                 >
+                 Book with Jennifer
+                </a>
+               </div>
+               </div>
+               <div class=" px-8">
+                <img
+            src="images/MelanieHeadShotSmall.jpg"
+            alt="Kristin"
+            class="rounded-full mx-auto mb-4 border-4 border-[#CB997E] justify-self-start"
+          />
+            <div class="mt-10 justify-center flex">
+              <a
+                href="https://therapyfinder.com/therapist/melanie-beuth-delmont-pa"
+                class="inline-block bg-[#6B705C] text-white px-6 py-3 rounded hover:bg-[#556050]"
+              >
+                Book with Melanie
+              </a>
+            </div>
+            </div>
+        </div>
+          
+         </div> 
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </section>
+    <!--  fetching the header-->
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("site-header").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
